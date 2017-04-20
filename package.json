@@ -1,0 +1,26 @@
+{
+  "name": "es6-cov",
+  "version": "1.0.0",
+  "description": "Test ES6 coverage",
+  "main": "index.js",
+  "scripts": {
+    "run": "babel-node index.js",
+    "test": "jest --coverage",
+    "build": "babel . -d ./dist --ignore=\"node_modules\""
+  },
+  "jest": {
+    "coverageReporters": ["html"]
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "*",
+    "babel-preset-stage-3": "*",
+    "babel-register": "*",
+    "jest": "^19.0.2",
+    "regenerator-runtime": "^0.10.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
